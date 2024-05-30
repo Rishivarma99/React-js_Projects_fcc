@@ -1,0 +1,38 @@
+
+body{
+
+}
+
+.accordionContainer{
+  
+  background-color:  #F8F4E1;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+     
+ .accordionQuestions{
+  margin: 0px auto;
+ }
+.selection-btn{
+  margin: 30px auto;
+  font-size: 2rem;
+  background-color: #AF8F6F;
+  color: #240750;
+}
+
+.accordion-main{
+  width: 750px;
+  max-width: 90vw;
+  margin: 0px auto;
+
+}
+.accordion-button{
+ background-color: #8d7964 !important;
+ color: #fff !important;
+ font-size: 1.5rem;
+}
+.accordion-body{
+  background-color: #543310 !important;
+  color:#F8F4E1  ;
+}
