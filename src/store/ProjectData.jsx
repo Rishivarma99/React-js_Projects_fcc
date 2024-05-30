@@ -8,7 +8,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/accordion",
-    ImageSrc: "./public/accordion.png",
+    ImageSrc: "./accordion.png",
   },
   {
     Id: "2",
@@ -19,7 +19,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/colorGenerator",
-    ImageSrc: "./public/random_color_generator.png",
+    ImageSrc: "./random_color_generator.png",
   },
   {
     Id: "3",
@@ -30,7 +30,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/starRating",
-    ImageSrc: "./public/star_rating.png",
+    ImageSrc: "./star_rating.png",
   },
   {
     Id: "4",
@@ -41,7 +41,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/imageSlider",
-    ImageSrc: "./public/image-slider.png",
+    ImageSrc: "./image-slider.png",
   },
 ];
 export default ProjectData;
