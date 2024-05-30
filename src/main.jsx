@@ -6,6 +6,7 @@ import AccordionApp from "./components/1_accordion/AccordionApp.jsx";
 import RandomColorGenerator from "./components/2_color_generator/RandomColorGenerator.jsx";
 import StarRating from "./components/3_star_rating/StarRating.jsx";
 import ImageSlider from "./components/4_image_slider/ImageSlider.jsx";
+import LoadProducts from "./components/5_load_more_products/LoadProducts.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,12 @@ const router = createBrowserRouter([
         url={"https://picsum.photos/v2/list"}
         limit={15}
       ></ImageSlider>
+    ),
+  },
+  {
+    path: "/loadProducts",
+    element: (
+      <LoadProducts url={"https://dummyjson.com/products"}></LoadProducts>
     ),
   },
 ]);

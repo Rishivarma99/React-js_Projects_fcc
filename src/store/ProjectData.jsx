@@ -43,5 +43,16 @@ const ProjectData = [
     Link: "/imageSlider",
     ImageSrc: "./image-slider.png",
   },
+  {
+    Id: "5",
+    Name: "Load More Products",
+    Description:
+      "This is a basiccolor generator app that generates hex or rgb colors",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/loadProducts",
+    ImageSrc: "./load-more-products.png",
+  },
 ];
 export default ProjectData;
