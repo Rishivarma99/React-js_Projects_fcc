@@ -54,5 +54,16 @@ const ProjectData = [
     Link: "/loadProducts",
     ImageSrc: "./load-more-products.png",
   },
+  {
+    Id: "6",
+    Name: "Tree View",
+    Description:
+      "This is a basiccolor generator app that generates hex or rgb colors",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/treeView",
+    ImageSrc: "./tree-view.png",
+  },
 ];
 export default ProjectData;

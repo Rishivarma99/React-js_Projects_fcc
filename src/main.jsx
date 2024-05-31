@@ -7,6 +7,7 @@ import RandomColorGenerator from "./components/2_color_generator/RandomColorGene
 import StarRating from "./components/3_star_rating/StarRating.jsx";
 import ImageSlider from "./components/4_image_slider/ImageSlider.jsx";
 import LoadProducts from "./components/5_load_more_products/LoadProducts.jsx";
+import TreeView from "./components/6_tree-view/TreeView.jsx";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
     element: (
       <LoadProducts url={"https://dummyjson.com/products"}></LoadProducts>
     ),
+  },
+  {
+    path: "/treeView",
+    element: <TreeView></TreeView>,
   },
 ]);
 

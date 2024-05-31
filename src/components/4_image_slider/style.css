@@ -15,8 +15,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 700px;
-  height: 550px;
+  width: 80%;
+  height: 35%;
   margin: 20px;
   margin: 0px auto;
 }
@@ -61,4 +61,19 @@
 
 .hide{
   display: none ;
+}
+
+
+@media (max-width:450px) {
+  .image-slider-container{
+    
+    width: 95%;
+    height: 10%;
+    
+    
+  }
+  .slider-main{
+  
+    height: 250vh;
+  }
 }

@@ -4,9 +4,35 @@ import "./style.css";
 const LoadProducts = ({ url }) => {
   const [count, setCount] = useState(0);
   const [data, setData] = useState([]);
+  const [fetching, setFetching] = useState(false);
+  const [errorMsg, setErrorMsg] = useState(null);
+
+  const HandleOnClick = (count) => {
+    setCount(count + 1);
+  };
+
+  useEffect(() => {
+    if (url != "") {
+      FetchItems(`${url}?limit=20&skip=${count === 0 ? 0 : count * 20}`);
+    }
+  }, [count]);
+
+  async function FetchItems(url) {
+    try {
+      setFetching(true);
+      const respone = await fetch(url);
+      const data = await respone.json();
+      if (data) {
+        setFetching(false);
+        fetchProducts(data.products);
+      }
+    } catch (e) {
+      setErrorMsg(e.message);
+      setFetching(false);
+    }
+  }
 
   const fetchProducts = (products) => {
-    console.log(products);
     if (count == 0) {
       setData(products);
     } else {
@@ -16,15 +42,13 @@ const LoadProducts = ({ url }) => {
     }
   };
 
-  const HandleOnClick = (count) => {
-    setCount(count + 1);
-  };
+  if (fetching) {
+    return <div className="fetching-msg">Data is Fetching</div>;
+  }
 
-  useEffect(() => {
-    fetch(`${url}?limit=20&skip=${count === 0 ? 0 : count * 20}`)
-      .then((obj) => obj.json())
-      .then((obj) => fetchProducts(obj.products));
-  }, [count]);
+  if (errorMsg !== null) {
+    return <div className="error-msg"> Error is : {errorMsg}</div>;
+  }
 
   return (
     <>
@@ -45,12 +69,18 @@ const LoadProducts = ({ url }) => {
               );
             })}
           </div>
-          <button className="lp-button" onClick={() => HandleOnClick(count)}>
+
+          <button
+            type="button"
+            className="btn btn-info lp-button"
+            onClick={() => HandleOnClick(count)}
+          >
+            {" "}
             Load More Data
           </button>
         </div>
       ) : (
-        <h1>Data is mot properly loaded </h1>
+        <h1>Data is not properly loaded </h1>
       )}
     </>
   );

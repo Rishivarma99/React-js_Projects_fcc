@@ -46,3 +46,16 @@ font-size: 1.5rem;
   margin: 10px auto;
 
 }
+
+.error-msg {
+   text-align: center;
+   font-size: 3rem;
+   font-family: 500;
+   margin: 20px auto;
+}
+.fetching-msg{
+  text-align: center;
+  font-size: 3rem;
+  font-family: 500;
+  margin: 20px auto;
+}

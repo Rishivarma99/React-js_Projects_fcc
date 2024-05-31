@@ -38,6 +38,7 @@ const AccordionApp = () => {
 
   const handleSingleSeclection = (currentId) => {
     // if click id is the selcted on then keep null so that that is not displayed
+
     setSelected(currentId == selected ? null : currentId);
   };
 
@@ -92,7 +93,7 @@ const AccordionApp = () => {
                   ? multiple.includes(que.id) == true && (
                       <div
                         id="collapseOne"
-                        className={`"accordion-collapse collapse"
+                        className={`"accordion-collapse "
                     }`}
                         data-bs-parent="#accordionExample"
                       >
@@ -102,7 +103,7 @@ const AccordionApp = () => {
                   : selected == que.id && (
                       <div
                         id="collapseOne"
-                        className={`"accordion-collapse collapse"
+                        className={`"accordion-collapse "
                     }`}
                         data-bs-parent="#accordionExample"
                       >
