@@ -6,7 +6,9 @@ import { generatePath } from "react-router-dom";
 const QrGenerator = () => {
   const [qrcode, setqrcode] = useState("");
   const [input, setinput] = useState("");
+  const [generate, setGenerate] = useState(false);
   const generateQr = () => {
+    setGenerate(true);
     setqrcode(input);
     setinput("");
   };
@@ -35,7 +37,7 @@ const QrGenerator = () => {
             Generate
           </button>
         </div>
-        <h4>QR code Generated For Text : {qrcode}</h4>
+        {generate == true && <h4>QR code Generated For Text : {qrcode}</h4>}
 
         <div>
           <QRCode
