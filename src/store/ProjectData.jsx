@@ -65,5 +65,16 @@ const ProjectData = [
     Link: "/treeView",
     ImageSrc: "./tree-view.png",
   },
+  {
+    Id: "7",
+    Name: "QR Code Generator",
+    Description:
+      "This is a basiccolor generator app that generates hex or rgb colors",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/qrgenerator",
+    ImageSrc: "./qr_code.png",
+  },
 ];
 export default ProjectData;

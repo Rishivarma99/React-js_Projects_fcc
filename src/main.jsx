@@ -8,6 +8,7 @@ import StarRating from "./components/3_star_rating/StarRating.jsx";
 import ImageSlider from "./components/4_image_slider/ImageSlider.jsx";
 import LoadProducts from "./components/5_load_more_products/LoadProducts.jsx";
 import TreeView from "./components/6_tree-view/TreeView.jsx";
+import QrGenerator from "./components/7_qr_code_generator/QrGenerator.jsx";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/treeView",
     element: <TreeView></TreeView>,
+  },
+  {
+    path: "/qrgenerator",
+    element: <QrGenerator></QrGenerator>,
   },
 ]);
 
