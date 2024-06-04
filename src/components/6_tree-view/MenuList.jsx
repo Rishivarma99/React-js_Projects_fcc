@@ -1,6 +1,8 @@
 import { getItem } from "localforage";
 import MenuItem from "./MenuItem";
 
+// menu items are created for every list
+
 const MenuList = ({ list = [] }) => {
   return (
     <ul className="main-list ">
