@@ -76,5 +76,16 @@ const ProjectData = [
     Link: "/qrgenerator",
     ImageSrc: "./qr_code.png",
   },
+  {
+    Id: "8",
+    Name: "Light Dark Mode",
+    Description:
+      "This is a basiccolor generator app that generates hex or rgb colors",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/lightdarkmode",
+    ImageSrc: "./qr_code.png",
+  },
 ];
 export default ProjectData;

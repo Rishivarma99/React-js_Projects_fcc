@@ -9,6 +9,7 @@ import ImageSlider from "./components/4_image_slider/ImageSlider.jsx";
 import LoadProducts from "./components/5_load_more_products/LoadProducts.jsx";
 import TreeView from "./components/6_tree-view/TreeView.jsx";
 import QrGenerator from "./components/7_qr_code_generator/QrGenerator.jsx";
+import LightDark from "./components/8_light_dark_mode/LightDark.jsx";
 
 const router = createBrowserRouter([
   {
@@ -50,11 +51,16 @@ const router = createBrowserRouter([
     path: "/qrgenerator",
     element: <QrGenerator></QrGenerator>,
   },
+  {
+    path: "/lightdarkmode",
+    element: <LightDark></LightDark>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <>
     {/* <App /> */}
     <RouterProvider router={router}></RouterProvider>
-  </React.StrictMode>
+  </>
 );
