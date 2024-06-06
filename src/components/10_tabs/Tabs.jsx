@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./style.css";
 import Content1 from "./Content1";
 
-const Tabs = ({ noOfTabs = 3 }) => {
-  let tabsArray = Array(noOfTabs).fill(1); // CREATING AN ARRAY TO CREATE BUTTONS
+const Tabs = ({ tabsArray }) => {
+  // let tabsArray = Array(noOfTabs).fill(1); // CREATING AN ARRAY TO CREATE BUTTONS
 
   const [currentTabIndex, setIndex] = useState(0);
   const handleButton = (index) => {
@@ -31,7 +31,7 @@ const Tabs = ({ noOfTabs = 3 }) => {
         </div>
 
         <div className="tabs-diplay-container">
-          {tabsArray.map((_, index) => {
+          {tabsArray.map((tab, index) => {
             return (
               <div
                 className={`tabs-content ${
@@ -39,9 +39,10 @@ const Tabs = ({ noOfTabs = 3 }) => {
                 } `}
                 key={index}
               >
-                the content of tab {index + 1}
+                {/* the content of tab {index + 1}
                 {index === 0 && <Content1></Content1>}
-                {/* //for a new content */}
+                //for a new content */}
+                {tab.content}
               </div>
             );
           })}
