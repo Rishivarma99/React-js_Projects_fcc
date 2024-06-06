@@ -10,6 +10,7 @@ import LoadProducts from "./components/5_load_more_products/LoadProducts.jsx";
 import TreeView from "./components/6_tree-view/TreeView.jsx";
 import QrGenerator from "./components/7_qr_code_generator/QrGenerator.jsx";
 import LightDark from "./components/8_light_dark_mode/LightDark.jsx";
+import ScrollBar from "./components/9_scroll_bar/ScrollBar.jsx";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
   {
     path: "/lightdarkmode",
     element: <LightDark></LightDark>,
+  },
+  {
+    path: "/scrollbar",
+    element: <ScrollBar></ScrollBar>,
   },
 ]);
 

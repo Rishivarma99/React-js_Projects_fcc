@@ -2,8 +2,8 @@
 .ld-main{
   width: 100vw;
   height: 100vh;
-  background-color: white;
-  color: black; 
+  /* background-color: white;
+  color: black;  */
   display: grid;
   place-items: center;
   justify-content: center;

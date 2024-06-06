@@ -7,10 +7,10 @@ const LightDark = () => {
   const [mode, setMode] = useLocalStorage("theme", "dark");
 
   const handleToggleMode = () => {
+    console.log("setmode invoked ");
     setMode(mode === "light" ? "dark" : "light");
   };
 
-  console.log(mode);
   return (
     <>
       <div className="ld-main" data-theme={mode}>

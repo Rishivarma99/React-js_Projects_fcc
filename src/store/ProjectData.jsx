@@ -87,5 +87,16 @@ const ProjectData = [
     Link: "/lightdarkmode",
     ImageSrc: "./qr_code.png",
   },
+  {
+    Id: "9",
+    Name: "Scroll Bar",
+    Description:
+      "This is a basiccolor generator app that generates hex or rgb colors",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/scrollbar",
+    ImageSrc: "./qr_code.png",
+  },
 ];
 export default ProjectData;

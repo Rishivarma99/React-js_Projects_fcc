@@ -1,0 +1,36 @@
+
+ 
+ .sb-main{
+
+ }
+
+ .sb-top{
+  position: fixed;
+  
+  background-color:#ADD899 ;
+  width: 100vw;
+
+ }
+
+ .sb-top h2 {
+   padding-top: 20px;
+   font-size: 2.5rem;
+ }
+
+
+
+.sb-scroll {
+  padding-top: 150px;
+  text-align: center;
+}
+
+.progress-bar-main{
+width: 100%;
+height: 10px;
+background-color: yellow;
+}
+.bar{
+ height: 10px;
+ background-color: blueviolet;
+}
+
