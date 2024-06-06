@@ -1,0 +1,38 @@
+
+
+.tabs-main{
+
+}
+
+.tabs-buttons-container{
+
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tabs-button{
+  color: white;
+  border: none;
+  background-color: #6B8A7A;
+  transition: linear 0.9s all;
+  font-size: 2rem;
+  
+
+}
+
+.tabs-selected-tab {
+  background-color: #254336;
+ 
+}
+
+.hide{
+  display: none;
+}
+
+.tabs-diplay-container{
+  margin-top: 20px;
+  font-size: 1.6rem;
+  display: grid;
+  justify-content: center;
+}

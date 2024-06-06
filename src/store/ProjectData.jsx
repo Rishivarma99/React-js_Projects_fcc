@@ -74,7 +74,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/qrgenerator",
-    ImageSrc: "./qr_code.png",
+    ImageSrc: "./qr-code-gen.png",
   },
   {
     Id: "8",
@@ -85,7 +85,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/lightdarkmode",
-    ImageSrc: "./qr_code.png",
+    ImageSrc: "./theme-change.png",
   },
   {
     Id: "9",
@@ -96,7 +96,18 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/scrollbar",
-    ImageSrc: "./qr_code.png",
+    ImageSrc: "./scroll-bar.png",
+  },
+  {
+    Id: "9",
+    Name: "Scroll Bar",
+    Description:
+      "This is a basiccolor generator app that generates hex or rgb colors",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/tabs",
+    ImageSrc: "./scroll-bar.png",
   },
 ];
 export default ProjectData;

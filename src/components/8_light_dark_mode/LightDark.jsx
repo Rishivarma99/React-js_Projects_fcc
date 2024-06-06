@@ -15,7 +15,7 @@ const LightDark = () => {
     <>
       <div className="ld-main" data-theme={mode}>
         <div className="ld-container">
-          <p>Hello World</p>
+          <p className="ld-p">Hello World</p>
 
           <button
             type="button"

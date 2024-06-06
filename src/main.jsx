@@ -12,6 +12,8 @@ import QrGenerator from "./components/7_qr_code_generator/QrGenerator.jsx";
 import LightDark from "./components/8_light_dark_mode/LightDark.jsx";
 import ScrollBar from "./components/9_scroll_bar/ScrollBar.jsx";
 
+import Tabs from "./components/10_tabs/Tabs.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -59,6 +61,10 @@ const router = createBrowserRouter([
   {
     path: "/scrollbar",
     element: <ScrollBar></ScrollBar>,
+  },
+  {
+    path: "/tabs",
+    element: <Tabs noOfTabs={3}></Tabs>,
   },
 ]);
 
