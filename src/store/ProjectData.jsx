@@ -107,7 +107,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/tabs",
-    ImageSrc: "./public/tabs.png",
+    ImageSrc: "./tabs.png",
   },
 ];
 export default ProjectData;
