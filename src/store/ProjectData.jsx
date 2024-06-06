@@ -99,15 +99,15 @@ const ProjectData = [
     ImageSrc: "./scroll-bar.png",
   },
   {
-    Id: "9",
-    Name: "Scroll Bar",
+    Id: "10",
+    Name: "Tabs",
     Description:
       "This is a basiccolor generator app that generates hex or rgb colors",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/tabs",
-    ImageSrc: "./scroll-bar.png",
+    ImageSrc: "./public/tabs.png",
   },
 ];
 export default ProjectData;
