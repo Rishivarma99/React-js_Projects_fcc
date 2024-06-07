@@ -8,7 +8,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/accordion",
-    ImageSrc: "./images/accordion.png",
+    ImageSrc: "./accordion.png",
   },
   {
     Id: "2",
@@ -118,7 +118,18 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/modalpage",
-    ImageSrc: "./tabs.png",
+    ImageSrc: "./modal-page.png",
+  },
+  {
+    Id: "12",
+    Name: "GitHub Profile Finder",
+    Description:
+      "This app helps to get user details when user name is given",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/githubfinder",
+    ImageSrc: "./modal-page.png",
   },
 ];
 export default ProjectData;

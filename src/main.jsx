@@ -11,6 +11,7 @@ import TreeView from "./components/6_tree-view/TreeView.jsx";
 import QrGenerator from "./components/7_qr_code_generator/QrGenerator.jsx";
 import LightDark from "./components/8_light_dark_mode/LightDark.jsx";
 import ScrollBar from "./components/9_scroll_bar/ScrollBar.jsx";
+import GithubFinder from "./components/12_GithubFinder/GithubFinder.jsx";
 
 import TabsTest from "./components/10_tabs/TabsTest.jsx";
 import ModalPage from "./components/11_custom_modal_page/ModalPage.jsx";
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
   {
     path: "/modalpage",
     element: <ModalPage></ModalPage>,
+  },
+  {
+    path: "/githubfinder",
+    element: <GithubFinder></GithubFinder>,
   },
 ]);
 
