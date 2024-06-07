@@ -8,7 +8,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/accordion",
-    ImageSrc: "./accordion.png",
+    ImageSrc: "./images/accordion.png",
   },
   {
     Id: "2",
