@@ -109,5 +109,16 @@ const ProjectData = [
     Link: "/tabs",
     ImageSrc: "./tabs.png",
   },
+  {
+    Id: "11",
+    Name: "Modal Page",
+    Description:
+      "This is a basiccolor generator app that generates hex or rgb colors",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/modalpage",
+    ImageSrc: "./tabs.png",
+  },
 ];
 export default ProjectData;

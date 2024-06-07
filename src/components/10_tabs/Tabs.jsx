@@ -31,21 +31,8 @@ const Tabs = ({ tabsArray }) => {
         </div>
 
         <div className="tabs-diplay-container">
-          {tabsArray.map((tab, index) => {
-            return (
-              <div
-                className={`tabs-content ${
-                  currentTabIndex === index ? "" : "hide"
-                } `}
-                key={index}
-              >
-                {/* the content of tab {index + 1}
-                {index === 0 && <Content1></Content1>}
-                //for a new content */}
-                {tab.content}
-              </div>
-            );
-          })}
+          {/* no need to use map just apply logical statments according to use state  */}
+          {tabsArray[currentTabIndex] && tabsArray[currentTabIndex].content}
         </div>
       </div>
     </>

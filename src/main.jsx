@@ -13,7 +13,7 @@ import LightDark from "./components/8_light_dark_mode/LightDark.jsx";
 import ScrollBar from "./components/9_scroll_bar/ScrollBar.jsx";
 
 import TabsTest from "./components/10_tabs/TabsTest.jsx";
-
+import ModalPage from "./components/11_custom_modal_page/ModalPage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -65,6 +65,10 @@ const router = createBrowserRouter([
   {
     path: "/tabs",
     element: <TabsTest></TabsTest>,
+  },
+  {
+    path: "/modalpage",
+    element: <ModalPage></ModalPage>,
   },
 ]);
 
