@@ -47,6 +47,8 @@ const GithubFinder = () => {
   return (
     <>
       <div className="gf-main">
+        <h1 className="gf-heading">GitHub Profile Finder</h1>
+
         <div className="gf-search-container">
           {errorMsg != null && <div>Error occured {errorMsg}</div>}
           <input
@@ -54,13 +56,14 @@ const GithubFinder = () => {
             placeholder="Enter the user name...."
             name="search-by-username"
             ref={username}
+            className="gf-input"
           />
           <button
             type="button"
-            className="btn btn-success"
+            className="btn btn-success gf-button"
             onClick={() => handleOnClick()}
           >
-            Success
+            Search
           </button>
         </div>
 

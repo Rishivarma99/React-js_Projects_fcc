@@ -123,13 +123,12 @@ const ProjectData = [
   {
     Id: "12",
     Name: "GitHub Profile Finder",
-    Description:
-      "This app helps to get user details when user name is given",
+    Description: "This app helps to get user details when user name is given",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/githubfinder",
-    ImageSrc: "./modal-page.png",
+    ImageSrc: "./githubfinder.png",
   },
 ];
 export default ProjectData;
