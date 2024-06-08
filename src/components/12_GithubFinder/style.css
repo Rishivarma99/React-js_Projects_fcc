@@ -1,0 +1,56 @@
+
+  .gf-main{
+ width: 100%;
+ margin-top: 30px;
+  }
+  .gf-search-container{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+  }
+  
+  .gf-search-container input{
+    width: 300px;
+  }
+
+
+
+.gf-user-details-container{
+  width: 100% ; 
+  margin-top: 20px;
+  }
+  
+  .gf-user-main{
+  border: 2px solid black;
+width: 650px;
+height: 450px;
+margin: 0px auto;
+}
+
+.gf-image-div{
+width: 100%;
+ display: flex;
+ justify-content: center;
+ margin-top: 20px;
+}
+
+.gf-user-image{
+  width: 30%;
+  border-radius: 50%;
+}
+.gf-user-details{
+text-align: center;
+}
+
+
+.gf-user-name{
+  text-align: center;
+}
+
+.user-span{
+  font-weight: 500;
+}
+
+
+
+

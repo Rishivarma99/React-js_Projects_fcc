@@ -4,28 +4,33 @@ import { useState } from "react";
 import "./style.css";
 import { useEffect } from "react";
 import { useRef } from "react";
-
+import UserDetails from "./UserDetails";
+export const FetchingComponent = () => {
+  return <div className="fetching-msg">Data is Fetching</div>;
+};
 const GithubFinder = () => {
-  const [userName, setUserName] = useState("");
+  let username = useRef();
   const [user, setUser] = useState("");
-  const [userDetails, setUserDetails] = useState({});
+
+  const [userDetails, setUserDetails] = useState(null);
   const [fetching, setFetching] = useState(false);
   const [errorMsg, setErrorMsg] = useState(null);
 
   const handleOnClick = () => {
-    setUser(userName);
+    let presentUsername = username.current.value;
+    console.log(presentUsername);
+    setUser(presentUsername);
+    username.current.value = "";
   };
 
   async function fetchGithubUserDetails() {
     try {
       setFetching(true);
-      const response = await fetch(`https://api.github.com/users/${userName}`);
+      const response = await fetch(`https://api.github.com/users/${user}`);
       const data = await response.json(); // this data is a object
       if (data) {
-        console.log(data);
-
+        setUserDetails(data);
         setFetching(false);
-        setUserName("");
       }
     } catch (e) {
       setErrorMsg(e.message);
@@ -34,25 +39,21 @@ const GithubFinder = () => {
   }
 
   useEffect(() => {
-    if (user != "") {
+    if (user != "" && !fetching) {
       fetchGithubUserDetails();
     }
   }, [user]);
-
-  if (fetching) {
-    return <div>User details fetching</div>;
-  }
 
   return (
     <>
       <div className="gf-main">
         <div className="gf-search-container">
+          {errorMsg != null && <div>Error occured {errorMsg}</div>}
           <input
             type="text"
             placeholder="Enter the user name...."
             name="search-by-username"
-            value={userName}
-            onChange={(event) => setUserName(event.target.value)}
+            ref={username}
           />
           <button
             type="button"
@@ -63,15 +64,13 @@ const GithubFinder = () => {
           </button>
         </div>
 
-        <div className="gf-user-details">
+        <div className="gf-user-details-container">
           {fetching ? (
-            <div>User details fetching</div>
-          ) : errorMsg != null ? (
-            <div>Error Occured {errorMsg}</div>
+            <FetchingComponent></FetchingComponent>
+          ) : userDetails != null ? (
+            <UserDetails user={userDetails}></UserDetails>
           ) : (
-            <>
-              <div>name : {userDetails.name}</div>
-            </>
+            ""
           )}
         </div>
       </div>
