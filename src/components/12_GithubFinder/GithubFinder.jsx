@@ -1,4 +1,5 @@
 //  api TO get details : https://api.github.com/users/USERNAME
+// used usestate and use ref
 
 import { useState } from "react";
 import "./style.css";
