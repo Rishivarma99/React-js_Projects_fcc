@@ -1,0 +1,61 @@
+
+.su-main{
+ background-color:  #81A263;
+ min-height: 100vh;
+ width: 100%;
+ height: 100%;
+}
+
+.su-search-user{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 5px;
+
+}
+
+.su-heading{
+  color: #365E32;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.su-input{
+
+  border: none;
+  border-radius: 2rem;
+  width: 40%;
+  height: 40px;
+  background-color: #365E32;
+  padding: 10px;
+  font-size: 1.5rem;
+  padding-left: 30px;
+  color: white;
+  font-weight: 550;
+  }
+  
+  .su-input:hover{
+
+}
+
+.su-diplay-div{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3px;
+  margin-top: 15px;
+}
+
+.su-item { 
+  cursor: pointer;
+  color: #059212;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+}
+
+@media (max-width :500px ){
+  .su-input{
+   width: 70%;
+    }
+}

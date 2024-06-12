@@ -1,0 +1,58 @@
+
+.tt-main{
+  width: 100%;
+  min-height: 100vh;
+}
+
+.tt-heading{
+  margin: 0;
+  padding-top: 30px;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.tt-game-container{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 110px;
+flex-direction: column;
+}
+.tt-game{
+ display: grid;
+ grid-template-columns: repeat(3,100px) ;
+ grid-template-rows:  repeat(3,100px);
+ border: 1px solid black;
+
+}
+.tt-box{
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.tt-display{
+  font-size: 2.4rem;
+  padding: 20px;
+
+}
+.tt-button{
+  
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+
+@media (max-width : 400px) {
+  .tt-display{
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+  
+  }
+}

@@ -130,5 +130,25 @@ const ProjectData = [
     Link: "/githubfinder",
     ImageSrc: "./githubfinder.png",
   },
+  {
+    Id: "13",
+    Name: "Search User",
+    Description: "This app helps to get user details when user name is given",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/searchuser",
+    ImageSrc: "./searchuser.png",
+  },
+  {
+    Id: "14",
+    Name: "Tic Tac Toe Game",
+    Description: "This app helps to get user details when user name is given",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/tictactoegame",
+    ImageSrc: "./searchuser.png",
+  },
 ];
 export default ProjectData;

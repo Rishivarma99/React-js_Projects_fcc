@@ -15,6 +15,8 @@ import GithubFinder from "./components/12_GithubFinder/GithubFinder.jsx";
 
 import TabsTest from "./components/10_tabs/TabsTest.jsx";
 import ModalPage from "./components/11_custom_modal_page/ModalPage.jsx";
+import SearchUsers from "./components/13_search_autocomplete/SearchUsers.jsx";
+import TicGame from "./components/14_tic_tac_toe_game/index.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -74,6 +76,14 @@ const router = createBrowserRouter([
   {
     path: "/githubfinder",
     element: <GithubFinder></GithubFinder>,
+  },
+  {
+    path: "/searchuser",
+    element: <SearchUsers></SearchUsers>,
+  },
+  {
+    path: "/tictactoegame",
+    element: <TicGame></TicGame>,
   },
 ]);
 
