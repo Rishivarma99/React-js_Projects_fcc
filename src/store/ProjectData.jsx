@@ -14,7 +14,7 @@ const ProjectData = [
     Id: "2",
     Name: "Color_generator",
     Description:
-      "This is a basiccolor generator app that generates hex or rgb colors",
+      "This is a basic color generator app that generates hex or rgb colors",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
@@ -24,8 +24,7 @@ const ProjectData = [
   {
     Id: "3",
     Name: "Star_Rating",
-    Description:
-      "This is a basiccolor generator app that generates hex or rgb colors",
+    Description: "This app allows user to assign rating",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
@@ -35,8 +34,7 @@ const ProjectData = [
   {
     Id: "4",
     Name: "Image Slider",
-    Description:
-      "This is a basiccolor generator app that generates hex or rgb colors",
+    Description: "This app illustrate a image slider to view multiple images",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
@@ -46,8 +44,7 @@ const ProjectData = [
   {
     Id: "5",
     Name: "Load More Products",
-    Description:
-      "This is a basiccolor generator app that generates hex or rgb colors",
+    Description: "This app illustrate how data is fetched from a api",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
@@ -58,7 +55,7 @@ const ProjectData = [
     Id: "6",
     Name: "Tree View",
     Description:
-      "This is a basiccolor generator app that generates hex or rgb colors",
+      "This app illustrate the side bar tree view and its functionalities",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
@@ -69,7 +66,7 @@ const ProjectData = [
     Id: "7",
     Name: "QR Code Generator",
     Description:
-      "This is a basiccolor generator app that generates hex or rgb colors",
+      "This app generate a qr code on the text which is given by user",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
@@ -79,8 +76,7 @@ const ProjectData = [
   {
     Id: "8",
     Name: "Light Dark Mode",
-    Description:
-      "This is a basiccolor generator app that generates hex or rgb colors",
+    Description: "This app explains the theme switch",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
@@ -91,7 +87,7 @@ const ProjectData = [
     Id: "9",
     Name: "Scroll Bar",
     Description:
-      "This is a basiccolor generator app that generates hex or rgb colors",
+      "This app is designed to show a scroll bar progress on the top as we scroll the window",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
@@ -102,7 +98,7 @@ const ProjectData = [
     Id: "10",
     Name: "Tabs",
     Description:
-      "This is a basiccolor generator app that generates hex or rgb colors",
+      "This app illustrates the function of tabs and how they are implemented",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
@@ -112,8 +108,7 @@ const ProjectData = [
   {
     Id: "11",
     Name: "Modal Page",
-    Description:
-      "This is a basiccolor generator app that generates hex or rgb colors",
+    Description: "This app represent a basic modal page",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
@@ -123,7 +118,8 @@ const ProjectData = [
   {
     Id: "12",
     Name: "GitHub Profile Finder",
-    Description: "This app helps to get user details when user name is given",
+    Description:
+      "This app helps to get user details when user name is given using github api",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
@@ -133,7 +129,7 @@ const ProjectData = [
   {
     Id: "13",
     Name: "Search User",
-    Description: "This app helps to get user details when user name is given",
+    Description: "This app helps to get user name auto complete",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
@@ -143,11 +139,22 @@ const ProjectData = [
   {
     Id: "14",
     Name: "Tic Tac Toe Game",
-    Description: "This app helps to get user details when user name is given",
+    Description: "This app is a tic tac toe game",
     Languages: ["Html", "Css", "Javascript", "React js"],
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/tictactoegame",
+    ImageSrc: "./tictacgame.png",
+  },
+  {
+    Id: "15",
+    Name: "Feature Flags",
+    Description:
+      "This apps uses context concept to display multiple components",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/featureflags",
     ImageSrc: "./searchuser.png",
   },
 ];
