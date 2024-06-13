@@ -1,4 +1,5 @@
 const Suggestion = ({ filteredArray, handleOnClick }) => {
+  console.log("hi");
   return (
     <div className="su-diplay-div">
       {filteredArray && filteredArray.length

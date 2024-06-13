@@ -6,6 +6,7 @@ const ScrollBar = (url) => {
   const [data, setData] = useState([]);
 
   const [scroll, setScroll] = useState(0);
+
   async function fetchNames(url) {
     try {
       setFetching(true);
@@ -15,6 +16,7 @@ const ScrollBar = (url) => {
       const data = await response.json();
       if (data) {
         setData(data.products);
+
         setFetching(false);
       }
     } catch (e) {
@@ -62,7 +64,7 @@ const ScrollBar = (url) => {
     return <div className="error-msg"> Error is : {errorMsg}</div>;
   }
 
-  window.addEventListener("scroll", handleScroll);
+  // window.addEventListener("scroll", handleScroll);
   return (
     <>
       <div className="sb-main">

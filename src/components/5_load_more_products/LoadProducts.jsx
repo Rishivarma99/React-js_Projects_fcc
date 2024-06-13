@@ -7,15 +7,17 @@ const LoadProducts = ({ url }) => {
   const [fetching, setFetching] = useState(false);
   const [errorMsg, setErrorMsg] = useState(null);
 
-  const HandleOnClick = (count) => {
+  const HandleOnClick = () => {
     setCount(count + 1);
   };
 
   useEffect(() => {
     if (url != "") {
-      FetchItems(`${url}?limit=20&skip=${count === 0 ? 0 : count * 20}`);
+      // FetchItems(`${url}?limit=20&skip=${count === 0 ? 0 : count * 20}`);
+
+      FetchItems(`${url}?limit=20&skip=${count * 20}`);
     }
-  }, [count]);
+  }, [count, url]);
 
   async function FetchItems(url) {
     try {
@@ -32,14 +34,21 @@ const LoadProducts = ({ url }) => {
     }
   }
 
+  const handleButtonClick = (event) => {
+    event.preventDefault();
+
+    HandleOnClick();
+  };
+
   const fetchProducts = (products) => {
-    if (count == 0) {
-      setData(products);
-    } else {
-      let prevData = data;
-      let newData = [...prevData, ...products];
-      setData(newData);
-    }
+    // if (count == 0) {
+    //   setData(products);
+    // } else {
+    //   let prevData = data;
+    //   let newData = [...prevData, ...products];
+    //   setData(newData);
+    // }
+    setData([...data, ...products]);
   };
 
   if (fetching) {
@@ -73,7 +82,7 @@ const LoadProducts = ({ url }) => {
           <button
             type="button"
             className="btn btn-info lp-button"
-            onClick={() => HandleOnClick(count)}
+            onClick={handleButtonClick}
           >
             {" "}
             Load More Data

@@ -31,7 +31,12 @@ function StarRating({ noOfStars = 8 }) {
               onClick={() => handleOnClick(index)}
               key={index}
               className={`
-              ${index <= (hover ?? rating) ? css.active : css.inactive}
+                // important 
+                // nullish coalescing (??) operator in JavaScript
+                In this case, (hover ?? rating) checks: 
+                 -> If hover has a value (not null or undefined), it uses the value of hover.
+                 ->If hover is null or undefined, it falls back to the rating value. 
+              ${index <= (hover ?? rating) ? css.active : css.inactive}  
             `}
               onMouseMove={() => handleOnMouseMove(index)}
               onMouseLeave={() => handleOnMouseLeave()}
