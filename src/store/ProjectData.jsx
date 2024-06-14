@@ -157,5 +157,15 @@ const ProjectData = [
     Link: "/featureflags",
     ImageSrc: "./searchuser.png",
   },
+  {
+    Id: "16",
+    Name: "Use Fetch",
+    Description: "This apps illustrates how a custom fetch is created",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/usefetch",
+    ImageSrc: "./searchuser.png",
+  },
 ];
 export default ProjectData;
