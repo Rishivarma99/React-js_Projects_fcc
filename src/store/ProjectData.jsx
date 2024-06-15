@@ -144,7 +144,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/tictactoegame",
-    ImageSrc: "./public/tictacgame.png",
+    ImageSrc: "./tictacgame.png",
   },
   {
     Id: "15",
