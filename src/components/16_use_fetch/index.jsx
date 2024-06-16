@@ -11,7 +11,7 @@ const useFetch = (url, options = {}) => {
       const response = await fetch(url, { ...options });
       if (!response.ok) throw new Error(response.statusText);
       const result = await response.json();
-      setData(result);
+      setData(result.products);
       setErrorMsg(null);
       setFetching(false);
     } catch (e) {
@@ -22,7 +22,9 @@ const useFetch = (url, options = {}) => {
 
   useEffect(() => {
     fetchData();
-  }, [url]);
+  }, []);
+
+  console.log(data);
 
   return { fetching, data, errorMsg };
 };

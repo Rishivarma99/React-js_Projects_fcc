@@ -1,12 +1,12 @@
 import useFetch from ".";
-
+import "./style.css";
 export default function UseFetchHookTest() {
   const { fetching, data, errorMsg } = useFetch(
     "https://dummyjson.com/products?limit=100&skip=0&select=title",
     {}
   );
 
-  console.log(data.products);
+  console.log(data);
 
   return (
     <>
@@ -14,11 +14,11 @@ export default function UseFetchHookTest() {
         <h1>Use Fetch</h1>
         {fetching && <div>The data is fetching</div>}
 
-        {data.products.map((item) => {
+        {data.map((item) => {
           return (
-            <center>
-              <h5>{item.title}</h5>
-            </center>
+            <h5 key={item.id} className="usefetch-names">
+              {item.title}
+            </h5>
           );
         })}
       </div>
