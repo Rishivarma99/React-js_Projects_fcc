@@ -17,9 +17,9 @@ import TabsTest from "./components/10_tabs/TabsTest.jsx";
 import ModalPage from "./components/11_custom_modal_page/ModalPage.jsx";
 import SearchUsers from "./components/13_search_autocomplete/SearchUsers.jsx";
 import TicGame from "./components/14_tic_tac_toe_game/index.jsx";
-import UseFetchHookTest from "./components/16_use_fetch/test.jsx";
 
 import FeatureFlags from "./components/15_Feature_flag/index.jsx";
+import Customhooks from "./components/17_custom_hooks/Customhooks.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -92,9 +92,10 @@ const router = createBrowserRouter([
     path: "/featureflags",
     element: <FeatureFlags></FeatureFlags>,
   },
+
   {
-    path: "/usefetch",
-    element: <UseFetchHookTest></UseFetchHookTest>,
+    path: "/customhooks",
+    element: <Customhooks></Customhooks>,
   },
 ]);
 

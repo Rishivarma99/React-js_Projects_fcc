@@ -1,0 +1,11 @@
+
+.use-outside-main{
+  border: 1px solid black;
+  width : 70% ; 
+  height : 150px;
+
+}
+
+.use-resize-div{
+  margin-top: 100px;
+}

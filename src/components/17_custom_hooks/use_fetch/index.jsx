@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 const useFetch = (url, options = {}) => {
+  console.log(url);
   const [data, setData] = useState([]);
   const [fetching, setFetching] = useState(false);
   const [errorMsg, setErrorMsg] = useState(null);
@@ -21,7 +22,9 @@ const useFetch = (url, options = {}) => {
   }
 
   useEffect(() => {
-    fetchData();
+    if (url != "") {
+      fetchData();
+    }
   }, []);
 
   console.log(data);
