@@ -176,7 +176,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/scrolltopbottom",
-    ImageSrc: "./custom-hooks.png",
+    ImageSrc: "./scrolltopbottom.png",
   },
   {
     Id: "18",
@@ -186,6 +186,16 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/scrolltosection",
+    ImageSrc: "./scrolltosection.png",
+  },
+  {
+    Id: "19",
+    Name: "Weather App",
+    Description: "This apps illustrates how a custom fetch is created",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/weatherapp",
     ImageSrc: "./custom-hooks.png",
   },
 ];

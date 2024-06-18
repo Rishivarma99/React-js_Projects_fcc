@@ -22,6 +22,7 @@ import FeatureFlags from "./components/15_Feature_flag/index.jsx";
 import Customhooks from "./components/17_custom_hooks/Customhooks.jsx";
 import ScrollTopBottom from "./components/18_scroll_top_bottom/index.jsx";
 import ScrollToSection from "./components/19_Scroll_to_particular/index.jsx";
+import WeatherApp from "./components/20_Weather_app/index.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -106,6 +107,10 @@ const router = createBrowserRouter([
   {
     path: "/scrolltosection",
     element: <ScrollToSection></ScrollToSection>,
+  },
+  {
+    path: "/weatherapp",
+    element: <WeatherApp></WeatherApp>,
   },
 ]);
 

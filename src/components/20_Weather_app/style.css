@@ -1,0 +1,76 @@
+
+.weather-main{
+  width: 100%;
+  margin: 10px;
+  
+}
+
+.weather-content{
+  margin-top: 50px;
+  
+  width: 100%;
+  
+}
+
+/* searh */
+
+.weather-search-engine{
+ width: 80%;
+ display: flex;
+ justify-content: center;
+ gap: 5px;
+ margin: 0px auto;
+}
+.weather-search-engine input {
+  width: 500px;
+  height: 60px;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+}
+
+.weather-search-button {
+ height: 60px;
+}
+.weather-cloudy{
+  height: 100px;
+  width: 100px;
+}
+.weather-flex-container{
+  display: flex;
+  
+}
+
+.weather-report-div{
+  margin: 20px auto;
+  display: grid;
+  justify-content: center;
+}
+.weather-span{
+  font-size: 2rem;
+}
+.weather-lon-lat p {
+
+  font-size: 2.2rem;
+}
+.weather-lon-lat{
+  display: flex;
+  justify-content: space-between;
+}
+.weather-description{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.weather-description p {
+  font-size: 2rem;
+}
+.weather-windspeed{
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+.weather-windspeed p{
+  font-size: 2rem;
+  
+}

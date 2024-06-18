@@ -43,7 +43,6 @@ const ScrollToSection = () => {
   };
 
   const handleClick = (e) => {
-    console.log(ref.current.getBoundingClientRect().top);
     const newSection = e.target.dataset.val;
     console.log(newSection);
     setSection(newSection);
