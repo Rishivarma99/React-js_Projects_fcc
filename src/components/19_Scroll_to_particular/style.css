@@ -1,0 +1,60 @@
+
+.scrolltoS-main{
+  width: 100%;
+ position: relative;
+ padding-top: 100px;
+}
+
+.scrolltoS-buttons{
+ position: fixed;
+ z-index: 999;
+ width:100%;
+ display: flex;
+ justify-content: center;
+ gap: 5px;
+ top: 1rem;
+ 
+ 
+}
+.scrolltoS-content{
+
+}
+.scrolltoS-section{
+  
+margin-top: 20px;
+}
+
+.scrolltoS-content-section{
+  
+  width: 90%;
+  height: 95vh;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-block: 10px;
+  margin-inline: auto;
+  position: relative;
+}
+.scrolltoS-home{
+  background-color: aqua;
+}
+.scrolltoS-about{
+  background-color: aqua;
+  
+}
+.scrolltoS-projects{
+  background-color: aqua;
+  
+}
+.scrolltoS-contactme{
+  background-color: aqua;
+  
+}
+
+.scrolltoS-icon-up{
+position: absolute;
+right : 3rem ;
+top: 3rem;
+font-size: 3rem;
+}

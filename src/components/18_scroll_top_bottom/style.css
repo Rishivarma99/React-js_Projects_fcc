@@ -1,0 +1,31 @@
+
+.scrolltb-main{
+  position: relative;
+}
+
+.scrolltb-data-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  place-items: center;
+}
+
+.scrolltb-title{
+
+}
+
+.scrolltb-icon-down{
+  font-size: 4rem;
+  margin: 0px auto;
+  position: absolute;
+  right: 5rem;
+  top: 1rem;
+}
+
+.scrolltb-icon-up{
+  font-size: 4rem;
+  position: absolute;
+  right: 5rem;
+  bottom: 1rem;
+}

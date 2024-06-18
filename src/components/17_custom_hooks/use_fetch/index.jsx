@@ -27,8 +27,6 @@ const useFetch = (url, options = {}) => {
     }
   }, []);
 
-  console.log(data);
-
   return { fetching, data, errorMsg };
 };
 

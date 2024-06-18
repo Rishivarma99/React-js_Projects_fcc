@@ -20,6 +20,8 @@ import TicGame from "./components/14_tic_tac_toe_game/index.jsx";
 
 import FeatureFlags from "./components/15_Feature_flag/index.jsx";
 import Customhooks from "./components/17_custom_hooks/Customhooks.jsx";
+import ScrollTopBottom from "./components/18_scroll_top_bottom/index.jsx";
+import ScrollToSection from "./components/19_Scroll_to_particular/index.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -96,6 +98,14 @@ const router = createBrowserRouter([
   {
     path: "/customhooks",
     element: <Customhooks></Customhooks>,
+  },
+  {
+    path: "/scrolltopbottom",
+    element: <ScrollTopBottom></ScrollTopBottom>,
+  },
+  {
+    path: "/scrolltosection",
+    element: <ScrollToSection></ScrollToSection>,
   },
 ]);
 
