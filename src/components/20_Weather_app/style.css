@@ -1,21 +1,42 @@
 
 .weather-main{
   width: 100%;
-  margin: 10px;
-  
+   margin: 0px auto;
+  margin-top: 0px;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #EEEEEE;
+  background: url(https://wallpapers.com/images/featured-full/weather-xqhs9axpy8btfd3y.jpg) ;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.weather-main h1{
+  margin: 0px auto;
+  padding-top: 20px;
+  color: #31363F;
+  text-transform: uppercase;
+  font-weight: 550;
+  letter-spacing: 0.4rem;
+  background-color: #EEEEEE;
+  width: 400px;
+
 }
 
 .weather-content{
+  padding: 30px;
+  height: 500px;
+  width: 800px;
+  margin: 0px auto;
   margin-top: 50px;
-  
-  width: 100%;
-  
+  background-color: #31363F;
 }
 
 /* searh */
 
 .weather-search-engine{
- width: 80%;
+ 
+ width: 85% ;
  display: flex;
  justify-content: center;
  gap: 5px;
@@ -23,13 +44,37 @@
 }
 .weather-search-engine input {
   width: 500px;
-  height: 60px;
+  height: 50px;
   font-size: 1.5rem;
   border-radius: 1rem;
+  padding: 20px;
+  font-weight: 600;
+  border: none;
+  outline: #31363F;
+  background-color: #76ABAE;
+  text-transform: uppercase;
+
+}
+.weather-search-engine input::placeholder{
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* color:#222831; */
+  text-transform: capitalize;
 }
 
 .weather-search-button {
- height: 60px;
+ height: 50px;
+ padding: 5px;
+ width: 200px;
+ background-color: white;
+ outline: #222831;
+ border: none;
+ border-radius: 1rem;
+ font-size: 1.2rem;
+
+}
+.weather-search-button:hover{
+ background-color: #76ABAE;
 }
 .weather-cloudy{
   height: 100px;
@@ -39,38 +84,104 @@
   display: flex;
   
 }
+.weather-report-div {
+  color: #76ABAE;
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 2em;
+  text-align: center;
+}
+.weather-report-div h2{
 
-.weather-report-div{
-  margin: 20px auto;
-  display: grid;
-  justify-content: center;
-}
-.weather-span{
-  font-size: 2rem;
-}
-.weather-lon-lat p {
-
-  font-size: 2.2rem;
-}
-.weather-lon-lat{
-  display: flex;
-  justify-content: space-between;
+  font-size: 1.1em;
+  margin: 6px;
+  margin-top: 25px;
+} 
+.weather-date{
+  font-size: 0.7em;
+text-align: center;
+margin-bottom: 30px;
 }
 .weather-description{
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
+  font-size: 0.7em;
+  margin-bottom: 15px;
+ text-align: center;
+ text-transform: capitalize;
 }
-.weather-description p {
-  font-size: 2rem;
-}
-.weather-windspeed{
-  display: flex;
-  justify-content: space-between;
-  
+.weather-temp{
+  font-size: 0.8em;
+  text-align: center;
 
 }
-.weather-windspeed p{
-  font-size: 2rem;
-  
+.weather-info{
+  font-size: 0.8em;
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 0px auto;
 }
+.weather-speed  {
+  height: 120px;
+  text-transform: capitalize;
+  width: 45%;
+  margin-top: 10px;
+}
+.weather-degree{
+  height: 120px;
+  width: 45%;
+ 
+  margin-top: 10px;
+}
+.weather-errormsg{
+  color: #F24C3D;
+  margin: 50px auto;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+@media (max-width : 500px ){
+  .weather-search-engine{
+ 
+    width: 95% ;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    
+    
+   }
+  .weather-search-engine input {
+    width: 60%;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .weather-search-engine input::placeholder{
+    font-size: 1rem;
+    color: #222831;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  
+  .weather-search-button {
+  
+   width: 40%;
+   height: 40px;
+
+  }
+   
+  .weather-content{
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .weather-report-div {
+    color: #76ABAE;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+

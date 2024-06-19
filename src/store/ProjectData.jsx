@@ -196,7 +196,7 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/weatherapp",
-    ImageSrc: "./custom-hooks.png",
+    ImageSrc: "./weatherapp.png",
   },
 ];
 export default ProjectData;

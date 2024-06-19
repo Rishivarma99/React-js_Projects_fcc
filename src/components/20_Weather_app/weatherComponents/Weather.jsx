@@ -4,11 +4,13 @@
 
 import { useEffect, useState } from "react";
 import Search from "./WeatherSearch";
+import { WiEarthquake } from "react-icons/wi";
 
 const Weather = () => {
-  const [search, setSearch] = useState("mumbai");
+  const [search, setSearch] = useState("");
   const [fetching, setFetching] = useState(false);
   const [weatherData, setweatherData] = useState(null);
+  const [errorMsg, setErrorMsg] = useState(null);
 
   const API_KEY = "0ce42cb8cd2e08940db0b75a2d3935d6";
 
@@ -18,14 +20,23 @@ const Weather = () => {
       const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${param}&appid=e34b4c51d8c2b7bf48d5217fe52ff79e`
       );
+      console.log(response);
+      if (response.ok == false) {
+        setErrorMsg(response);
+      } else {
+        setErrorMsg(null);
+      }
+
       const data = await response.json();
       if (data) {
+        setSearch("");
         setweatherData(data);
         setFetching(false);
       }
     } catch (error) {
       setFetching(false);
-      console.log(error);
+      console.log("hi");
+      console.log(error.message);
     }
   }
 
@@ -57,10 +68,18 @@ const Weather = () => {
 
   // just for start
   useEffect(() => {
-    fetchWeatherData(search);
-  }, [search]);
+    fetchWeatherData("andhra pradesh");
+  }, []);
 
-  console.log(weatherData);
+  const currentDate = new Date();
+  const getCurrentDate = () => {
+    return new Date().toLocaleDateString("en-us", {
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    });
+  };
 
   return (
     <>
@@ -72,54 +91,50 @@ const Weather = () => {
             setSearch={setSearch}
             handleSearch={handleSearch}
           ></Search>
-
           {fetching ? (
             <div className="fetching-msg">Data is Fetching</div>
           ) : null}
 
-          {!fetching && weatherData && weatherData.length != 0 ? (
+          {errorMsg != null && (
+            <div className="weather-errormsg">
+              {" "}
+              Error : {errorMsg.statusText} , Please Retry{" "}
+            </div>
+          )}
+          {!fetching &&
+          errorMsg == null &&
+          weatherData &&
+          weatherData.length != 0 ? (
             <div className="weather-report-div">
-              {/* <h2>{{weatherData.name}} </h2> */}
+              <h2>
+                {weatherData?.name}, {weatherData?.sys?.country}{" "}
+              </h2>
+              <div className="weather-date">{getCurrentDate()}</div>
 
-              <div className="weather-lon-lat">
-                <p className="weather-lat">
+              <h3 className="weather-temp">{weatherData?.main?.temp}</h3>
+
+              {weatherData.weather && weatherData.weather[0] ? (
+                <div className="weather-description">
                   {" "}
-                  <span className="weather-span">Lon :</span>
-                  {weatherData.coord["lat"]}
-                </p>
-                <p className="weather-lat">
-                  {" "}
-                  <span className="weather-span">Lat :</span>
-                  {weatherData.coord["lon"]}
-                </p>
-              </div>
-              {weatherData.weather.map((item) => {
-                return (
-                  <div className="weather-description">
-                    <p>
-                      {" "}
-                      <span className="weather-span">main :</span> {item.main}
-                    </p>
-                    <p>
-                      {" "}
-                      <span className="weather-span">description:</span>{" "}
-                      {item.description}
-                    </p>
+                  {weatherData.weather[0].description}
+                </div>
+              ) : (
+                ""
+              )}
+              {weatherData.wind ? (
+                <div className="weather-info">
+                  <div className="weather-speed">
+                    <div>{weatherData.wind["speed"]}</div>
+                    <p>Wind Speed</p>
                   </div>
-                );
-              })}
-              <div className="weather-windspeed">
-                <p>
-                  {" "}
-                  <span className="weather-span">degree : </span>{" "}
-                  {weatherData.wind["deg"]}
-                </p>
-                <p>
-                  {" "}
-                  <span className="weather-span">Speed : </span>{" "}
-                  {weatherData.wind["speed"]}
-                </p>
-              </div>
+                  <div className="weather-degree">
+                    <div>{weatherData.wind["deg"]}</div>
+                    <p>Wind Degree</p>
+                  </div>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           ) : null}
         </div>
