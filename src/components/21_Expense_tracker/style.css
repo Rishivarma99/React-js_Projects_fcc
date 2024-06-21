@@ -1,0 +1,134 @@
+
+.expt-heading1{
+  padding-block: 20px;
+  text-align: center;
+}
+.expt-main{
+  width: 500px;
+  margin: 0px auto;
+  height: 100vh;
+}
+.expt-balance-main p {
+  margin: 0px;
+}
+.expt-balance-main{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  width: 500px;
+  margin: 0px auto;
+  margin-bottom:20px ;
+
+}
+.expt-text {
+  font-size: 1.5rem;
+}
+.expt-money{
+  font-size: 2rem;
+}
+
+.expt-income-main{
+  display: flex;
+  width: 70%;
+}
+.expt-income-div{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   height: 100px;
+   background-color: #F3F7EC;
+  border: 1px solid black;
+
+}
+.expt-expense-div{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+  background-color: #F3F7EC;
+  border: 1px solid black;
+  
+}
+
+
+.expt-transaction p {
+  margin: 0px;
+}
+
+.expt-history-div{
+  margin-bottom: 20px;
+}
+.exp-transaction-history{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0px auto;
+  width: 89%;
+}
+
+.expt-transaction{
+  display: flex;
+  justify-content: center;
+  background-color: #F3F7EC;
+
+}
+.expt-transaction-text{
+  width: 68%;
+  font-size: 1.5rem;
+}
+.expt-transaction-money{
+  width: 30%;
+  font-size: 1.5rem;
+
+}
+.expt-strip{
+  width: 2%;
+}
+.expt-green{
+  background-color: green;
+}
+.expt-red{
+  background-color: red; 
+
+}
+
+.expt-addtrans-main{
+}
+.expt-addtrans-div{
+  margin: 0px auto;
+  
+  width: 400px;
+}
+
+.expt-addtrans-div-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.expt-label{
+  display: block;
+  font-size: 1.3rem;
+}
+.expt-input{
+  width: 80%;
+  font-size: 1.4rem;
+}
+.expt-button-div{
+  display: flex;
+  justify-content: space-between;
+   
+}
+.expt-button{
+  width: 45%;
+  margin: 0px auto;
+ 
+}
+.expt-span{
+  font-size: 1rem;
+}
+.expt-history-heading{
+  padding-left: 10px;
+}

@@ -23,6 +23,7 @@ import Customhooks from "./components/17_custom_hooks/Customhooks.jsx";
 import ScrollTopBottom from "./components/18_scroll_top_bottom/index.jsx";
 import ScrollToSection from "./components/19_Scroll_to_particular/index.jsx";
 import WeatherApp from "./components/20_Weather_app/index.jsx";
+import ExpenseTracker from "./components/21_Expense_tracker/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -112,6 +113,10 @@ const router = createBrowserRouter([
   {
     path: "/weatherapp",
     element: <WeatherApp></WeatherApp>,
+  },
+  {
+    path: "/expensetracker",
+    element: <ExpenseTracker></ExpenseTracker>,
   },
 ]);
 

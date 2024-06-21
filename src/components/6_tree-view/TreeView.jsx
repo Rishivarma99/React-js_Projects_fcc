@@ -16,7 +16,7 @@ const TreeView = () => {
   return (
     <>
       <div className={`tv-main ${showSideBar ? "show" : ""}`}>
-        <h2>Tree View</h2>
+        <h2 className="treev-heading">Tree View</h2>
         <MenuList list={menus}></MenuList>
       </div>
       <TiThMenu
