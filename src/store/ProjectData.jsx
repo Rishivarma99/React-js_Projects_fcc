@@ -208,5 +208,15 @@ const ProjectData = [
     Link: "/expensetracker",
     ImageSrc: "./expensetracker.png",
   },
+  {
+    Id: "21",
+    Name: "Social App",
+    Description: "This apps illustrates how a custom fetch is created",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/socialmediaapp",
+    ImageSrc: "./expensetracker.png",
+  },
 ];
 export default ProjectData;
