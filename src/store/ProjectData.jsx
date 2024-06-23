@@ -216,7 +216,17 @@ const ProjectData = [
     Frameworks: "Bootstrap",
     Concepts: "routing",
     Link: "/socialmediaapp",
-    ImageSrc: "./expensetracker.png",
+    ImageSrc: "./socialmedia.png",
+  },
+  {
+    Id: "22",
+    Name: "Todo List App",
+    Description: "This apps illustrates how a custom fetch is created",
+    Languages: ["Html", "Css", "Javascript", "React js"],
+    Frameworks: "Bootstrap",
+    Concepts: "routing",
+    Link: "/todolistapp",
+    ImageSrc: "./todolist.png",
   },
 ];
 export default ProjectData;

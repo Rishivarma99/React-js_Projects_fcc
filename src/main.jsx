@@ -25,6 +25,7 @@ import ScrollToSection from "./components/19_Scroll_to_particular/index.jsx";
 import WeatherApp from "./components/20_Weather_app/index.jsx";
 import ExpenseTracker from "./components/21_Expense_tracker/index.jsx";
 import SocialApp from "./components/22_social_media/SocialApp.jsx";
+import TodoList1 from "./components/23_Todo_list/TodoList1.jsx";
 
 const router = createBrowserRouter([
   {
@@ -122,6 +123,10 @@ const router = createBrowserRouter([
   {
     path: "/socialmediaapp",
     element: <SocialApp></SocialApp>,
+  },
+  {
+    path: "/todolistapp",
+    element: <TodoList1></TodoList1>,
   },
 ]);
 
