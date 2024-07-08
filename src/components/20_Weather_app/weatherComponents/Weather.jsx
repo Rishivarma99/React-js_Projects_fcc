@@ -20,6 +20,7 @@ const Weather = () => {
       const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${param}&appid=e34b4c51d8c2b7bf48d5217fe52ff79e`
       );
+
       console.log(response);
       if (response.ok == false) {
         setErrorMsg(response);
